@@ -87,3 +87,29 @@ The most advanced, ethical, and Shariah-compliant monetary system on Earth — a
 
 ## Scale & Scope
 Multi-billion dollar deployment scope. OIC member states as primary market. Islamic banks, central banks, and Shariah boards as primary institutional operators. Individual and institutional wallet holders participate via THE AZHAR stablecoin.
+
+---
+
+## MVP Status (Completed — June 2026)
+
+The initial MVP layer of AZHAR OVERLORD is live and includes:
+
+| Module | Status | Description |
+|---|---|---|
+| Transaction Compliance Screening | Built | Real-time Shariah screening of every transaction against the fatwa-compliance rules; auto-rejects Haram transactions |
+| Zakat Calculator | Built | Automatic 2.5% Zakat calculation for qualifying wallets and THE AZHAR stablecoin holders |
+| Halal Investment Screener | Built | Screens investment instruments for Shariah compliance — rejects Riba, Gharar, and Maysir exposure |
+| Shariah Audit Dashboard | Built | Compliance officers and Shariah board members can view real-time audit status, screening logs, and compliance metrics |
+
+---
+
+## Next Feature Roadmap
+
+### 1. Automated Compliance Reports
+Scheduled, board-ready PDF Shariah compliance reports generated automatically from the Shariah Audit Engine. Each report includes branch-level breakdown, trend analysis across reporting periods, and summary statistics for Shariah board review. Targets: Islamic bank compliance teams, Shariah supervisory boards, and central bank auditors.
+
+### 2. Customer Halal Finance Portal
+A self-service portal for individual and institutional bank customers to review their own transaction compliance history, check Zakat eligibility and amounts, and access Halal investment screening results. Targets: Wallet holders and retail/institutional customers of Islamic banks operating on the AZHAR OVERLORD platform.
+
+### 3. Waqf Asset Registry
+A dedicated registry for Islamic endowment (Waqf) assets — allowing Waqf administrators to register assets, track Shariah compliance status, record distribution history, and verify that Waqf funds remain within Shariah boundaries. Quantum-resistant encryption protects Waqf data. Targets: Waqf management bodies, Islamic banks acting as Waqf trustees, and Shariah boards overseeing endowments.
