@@ -90,6 +90,19 @@ Multi-billion dollar deployment scope. OIC member states as primary market. Isla
 
 ---
 
+## Founder & Leadership
+
+| | |
+|---|---|
+| **Founder & CEO** | KOSASIH |
+| **Country** | Indonesia |
+| **LinkedIn** | https://www.linkedin.com/in/kosasih-81b46b5a?trk=contact-info |
+| **Twitter / X** | https://x.com/Kosasihg88G |
+| **GitHub** | https://github.com/KOSASIH |
+| **Photo** | https://client-api.quantumbyte.ai/uploads/eqn1zqlg/4751/assets/a7c49b53-97d6-49d2-afe5-7366df151de2_1781613999750_typywf.jpg |
+
+---
+
 ## MVP Status (Completed — June 2026)
 
 The initial MVP layer of AZHAR OVERLORD is live and includes:
