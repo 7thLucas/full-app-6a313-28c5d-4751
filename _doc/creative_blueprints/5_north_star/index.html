@@ -1,87 +1,124 @@
-<section class="w-full h-full bg-white overflow-auto">
-  <div class="h-full flex flex-col p-10">
+<style>
+  .mode-landscape .sl-main { flex-direction: row; }
+  .mode-portrait .sl-main { flex-direction: column; }
+  .mode-landscape .sl-ops-col { width: 43%; flex-shrink: 0; }
+  .mode-portrait .sl-ops-col { width: 100%; }
+</style>
+
+<section class="w-full h-full bg-white overflow-hidden">
+  <div class="h-full flex flex-col" style="padding: 2rem 2.5rem;">
 
     <!-- Header -->
-    <div class="flex items-start justify-between mb-6">
-      <div>
-        <div class="flex items-center gap-3 mb-2">
-          <p class="text-xs font-bold tracking-widest text-amber-600 uppercase">North Star Metric</p>
-          <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-semibold px-3 py-0.5 rounded-full">Projected impact — based on your inputs</span>
+    <div class="mb-5">
+      <div class="flex items-center gap-3 mb-1.5">
+        <span class="text-xs font-black tracking-widest text-amber-600 uppercase">★ North Star Metric</span>
+        <span class="bg-amber-50 border border-amber-300 text-amber-800 text-xs font-semibold px-3 py-0.5 rounded-full">Projected impact — based on your inputs</span>
+      </div>
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="text-3xl font-black text-emerald-900 leading-tight">Weekly Verified Operations</h2>
+          <p class="text-sm text-slate-500 mt-0.5">The number AZHAR lives by — compliance operations screened, scored, and verified each week</p>
         </div>
-        <h2 class="text-2xl font-black text-emerald-900">Weekly Verified Operations</h2>
+        <div class="text-right bg-emerald-50 border border-emerald-200 rounded-xl px-5 py-2">
+          <p class="text-3xl font-black text-emerald-900 leading-tight">35K+</p>
+          <p class="text-xs font-bold text-emerald-600 uppercase tracking-wide">ops / week (projected)</p>
+        </div>
       </div>
     </div>
 
-    <div class="flex gap-4 flex-1 min-h-0">
+    <!-- Divider -->
+    <div class="border-t border-slate-100 mb-4"></div>
 
-      <!-- Left: Operation Type Definitions -->
-      <div class="w-5/12 flex flex-col gap-3">
+    <!-- Main layout -->
+    <div class="sl-main flex flex-1 gap-5 min-h-0">
 
-        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex-1 flex flex-col">
+      <!-- Left: Verified operation types -->
+      <div class="sl-ops-col flex flex-col gap-3">
+        <p class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">What Counts as a Verified Operation</p>
+
+        <!-- Op 1 -->
+        <div class="flex-1 rounded-xl bg-emerald-50 border border-emerald-200 p-4 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
-            <span class="w-2 h-2 rounded-full bg-emerald-600 flex-shrink-0"></span>
-            <p class="text-xs font-bold text-emerald-900 uppercase tracking-wide">Op 1: Shariah Compliance Audit</p>
+            <span class="bg-emerald-700 text-white text-xs font-black px-2.5 py-0.5 rounded-full">Op 1</span>
+            <p class="text-xs font-black text-emerald-900 uppercase tracking-wide">Shariah Compliance Audit</p>
           </div>
-          <p class="text-xs text-slate-600 leading-snug">A transaction screened and ruled compliant or rejected by the Shariah Audit Engine — the primary verified event AZHAR OVERLORD exists to perform</p>
+          <p class="text-xs text-slate-600 leading-snug flex-1">A transaction screened and ruled Halal or rejected by the Shariah Audit Engine — auto-flags Riba, Gharar, gambling, and all 8 Haram categories in real time</p>
+          <div class="mt-2 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 flex-shrink-0"></span>
+            <span class="text-xs text-emerald-700 font-bold">Core MVP — Live</span>
+          </div>
         </div>
 
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex-1 flex flex-col">
+        <!-- Op 2 -->
+        <div class="flex-1 rounded-xl bg-amber-50 border border-amber-200 p-4 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
-            <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
-            <p class="text-xs font-bold text-amber-900 uppercase tracking-wide">Op 2: THE AZHAR Settlement</p>
+            <span class="bg-amber-500 text-white text-xs font-black px-2.5 py-0.5 rounded-full">Op 2</span>
+            <p class="text-xs font-black text-amber-900 uppercase tracking-wide">Halal Investment Screening</p>
           </div>
-          <p class="text-xs text-slate-600 leading-snug">A cross-border OIC payment processed and settled via THE AZHAR stablecoin protocol — immutable, Riba-free, in under 1 second</p>
+          <p class="text-xs text-slate-600 leading-snug flex-1">An investment instrument evaluated against AAOIFI standards — fully screened for Riba, Gharar, and Maysir exposure before any capital allocation is approved</p>
+          <div class="mt-2 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>
+            <span class="text-xs text-amber-700 font-bold">MVP — Live</span>
+          </div>
         </div>
 
-        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex-1 flex flex-col">
+        <!-- Op 3 -->
+        <div class="flex-1 rounded-xl bg-slate-50 border border-slate-200 p-4 flex flex-col">
           <div class="flex items-center gap-2 mb-2">
-            <span class="w-2 h-2 rounded-full bg-slate-500 flex-shrink-0"></span>
-            <p class="text-xs font-bold text-slate-800 uppercase tracking-wide">Op 3: Zakat Distribution</p>
+            <span class="bg-slate-600 text-white text-xs font-black px-2.5 py-0.5 rounded-full">Op 3</span>
+            <p class="text-xs font-black text-slate-700 uppercase tracking-wide">Zakat Calculation</p>
           </div>
-          <p class="text-xs text-slate-600 leading-snug">An automated 2.5% Zakat calculation and transfer executed for a qualifying wallet — recorded, immutable, Shariah-compliant</p>
+          <p class="text-xs text-slate-600 leading-snug flex-1">An automatic 2.5% Zakat calculation executed and recorded for a qualifying wallet — immutable, Shariah-compliant, zero manual intervention required</p>
+          <div class="mt-2 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-600 font-bold">MVP — Live</span>
+          </div>
         </div>
 
       </div>
 
-      <!-- Right: WVO Projection + Value Derivation -->
-      <div class="flex-1 flex flex-col gap-3">
+      <!-- Right: Projection + Value -->
+      <div class="flex-1 flex flex-col gap-4">
 
-        <!-- WVO Formula Block -->
-        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
-          <p class="text-xs font-bold text-slate-700 uppercase tracking-wide mb-3">WVO Projection — Shariah Audits</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Assumption — adjust: 10 bank clients</span>
-            <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Assumption — adjust: 500 audits/day per bank</span>
+        <!-- WVO Formula -->
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+          <p class="text-xs font-black text-slate-600 uppercase tracking-widest mb-3">WVO Projection Formula — Op 1 (Primary)</p>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Assumption — adjust: 10 bank clients</span>
+            <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Assumption — adjust: 500 audits/day per bank</span>
           </div>
-          <div class="bg-white border border-slate-200 rounded-lg px-4 py-3">
-            <p class="text-xs text-slate-600 font-mono leading-relaxed">10 banks &times; 500 audits/day &times; 7 days</p>
-            <p class="text-base font-black text-emerald-900 mt-1">= 35,000 Shariah audits / week</p>
+          <div class="bg-white border border-emerald-200 rounded-lg px-4 py-3">
+            <p class="text-xs text-slate-400 font-mono leading-relaxed">10 banks × 500 audits/day × 7 days =</p>
+            <p class="text-2xl font-black text-emerald-800 mt-0.5">35,000 Shariah audits / week</p>
           </div>
         </div>
 
-        <!-- Value Derivation Block -->
+        <!-- Value Card — dark emerald -->
         <div class="bg-emerald-900 rounded-xl p-5 flex-1 flex flex-col justify-between">
           <div>
-            <p class="text-xs font-bold text-emerald-300 uppercase tracking-wide mb-3">Projected Value (Op 1)</p>
-            <div class="space-y-3">
-              <div class="bg-white bg-opacity-10 rounded-lg px-4 py-3">
-                <div class="flex flex-wrap gap-2 mb-2">
-                  <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2 py-0.5 rounded">Assumption — adjust: 20 min saved/audit</span>
-                  <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2 py-0.5 rounded">Assumption — adjust: $40/hr compliance cost</span>
-                </div>
-                <p class="text-white text-xs font-mono leading-relaxed">35,000 ops &times; (20 &divide; 60) hr &times; $40/hr</p>
-                <p class="text-amber-400 font-black text-lg mt-1">= $466,667 / week</p>
+            <p class="text-xs font-black text-emerald-300 uppercase tracking-widest mb-3">Projected Value — Compliance Cost Recovered</p>
+            <div class="bg-white bg-opacity-10 rounded-lg px-4 py-3 mb-3">
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class="bg-amber-200 text-amber-900 text-xs font-bold px-2 py-0.5 rounded">Assumption: 20 min saved / audit</span>
+                <span class="bg-amber-200 text-amber-900 text-xs font-bold px-2 py-0.5 rounded">Assumption: $40 / hr compliance cost</span>
               </div>
-              <div class="px-1">
-                <p class="text-emerald-200 text-xs font-mono">$466,667 &times; 52 weeks</p>
-                <p class="text-amber-300 font-black text-2xl">= $24.3M / year</p>
-              </div>
+              <p class="text-emerald-200 text-xs font-mono">35,000 ops × (20÷60) hr × $40/hr</p>
+              <p class="text-amber-400 font-black text-2xl mt-1">= $466,667 / week</p>
             </div>
           </div>
-          <p class="text-emerald-400 text-xs italic mt-3">All inputs are user-adjustable assumptions — not guaranteed results</p>
+
+          <div class="border-t border-emerald-700 pt-4 flex items-end justify-between">
+            <div>
+              <p class="text-emerald-400 text-xs font-mono">$466,667 × 52 weeks =</p>
+              <p class="text-amber-300 font-black text-4xl leading-none mt-0.5">$24.3M</p>
+              <p class="text-emerald-300 font-semibold text-sm">per year — in compliance cost recovered</p>
+            </div>
+            <p class="text-emerald-500 text-xs italic text-right">All inputs are<br>user-adjustable<br>assumptions</p>
+          </div>
         </div>
 
       </div>
     </div>
+
   </div>
 </section>
