@@ -14,33 +14,45 @@ export type TBrandColor = {
 
 export type TDefaultConfigurableData = {
   appName: string;
+  tagline: string;
   logoUrl: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  institutionName: string;
+  niabGoldPricePerGram: number;
+  nisabSilverPricePerGram: number;
+  zakatRate: number;
+  haramCategories: string[];
+  companyWebsite: string;
+  supportEmail: string;
+  showAzharStablecoin: boolean;
+  defaultCurrency: string;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "FILL_APP_NAME_HERE",
+  appName: "AZHAR",
+  tagline: "Shariah-Compliant Financial Intelligence for the Modern Islamic Economy",
   logoUrl: "FILL_LOGO_URL_HERE",
   brandColor: {
-    primary: "FILL_PRIMARY_COLOR_HERE",
-    secondary: "FILL_SECONDARY_COLOR_HERE",
-    accent: "FILL_ACCENT_COLOR_HERE",
+    primary: "#1A6B4A",
+    secondary: "#C9A84C",
+    accent: "#0F3D2A",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // Required branding fields → use the FILL_X_HERE placeholder pattern.
-  // Optional/typed defaults → real value with a "// fill it here" comment:
-  //
-  //   maxItemsPerPage: 12,                     // fill it here
-  //   enableNotifications: true,               // fill it here
-  //   featuredCategories: [],                  // fill it here
-  //   defaultLanguage: "en",                   // must match enum options
-  //   launchDate: "2025-01-01T00:00:00.000Z",  // ISO-8601
-  //   heroImage: "",                           // resolved URL after upload
-  //   galleryImages: [],                       // array of resolved URLs
-  // ─────────────────────────────────────────────────────────────────────
+  institutionName: "AZHAR Shariah Finance Platform",
+  niabGoldPricePerGram: 95.0,      // fill it here — USD per gram of gold (approximate)
+  nisabSilverPricePerGram: 0.85,   // fill it here — USD per gram of silver (approximate)
+  zakatRate: 2.5,                  // fill it here — 2.5% is the standard Zakat rate
+  haramCategories: [
+    "Alcohol & Spirits",
+    "Gambling / Maysir",
+    "Conventional Weapons & Defence",
+    "Pork & Non-Halal Food",
+    "Tobacco Products",
+    "Adult Entertainment",
+    "Conventional Interest (Riba)",
+    "Drugs & Narcotics",
+  ],
+  companyWebsite: "https://azhar.finance",
+  supportEmail: "support@azhar.finance",
+  showAzharStablecoin: true,       // fill it here
+  defaultCurrency: "USD",          // must match enum options
 };

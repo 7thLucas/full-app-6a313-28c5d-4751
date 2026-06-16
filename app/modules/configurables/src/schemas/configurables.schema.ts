@@ -29,8 +29,6 @@ export type ConfigurableSchemas = {
   formSchema: FieldSchemaType[];
 };
 
-
-
 export const configurableSchemas: ConfigurableSchemas = {
   formSchema: [
     {
@@ -38,6 +36,15 @@ export const configurableSchemas: ConfigurableSchemas = {
       type: "string",
       required: true,
       label: "App Name",
+      minLength: 1,
+      maxLength: 100,
+    },
+    {
+      fieldName: "tagline",
+      type: "string",
+      required: false,
+      label: "Tagline",
+      maxLength: 200,
     },
     {
       fieldName: "logoUrl",
@@ -55,21 +62,82 @@ export const configurableSchemas: ConfigurableSchemas = {
           fieldName: "primary",
           type: "color",
           required: true,
-          label: "Primary",
+          label: "Primary (Emerald Green)",
         },
         {
           fieldName: "secondary",
           type: "color",
           required: true,
-          label: "Secondary",
+          label: "Secondary (Gold)",
         },
         {
           fieldName: "accent",
           type: "color",
           required: true,
-          label: "Accent",
+          label: "Accent (Dark Emerald)",
         },
       ],
+    },
+    {
+      fieldName: "institutionName",
+      type: "string",
+      required: false,
+      label: "Institution Name",
+      maxLength: 200,
+    },
+    {
+      fieldName: "niabGoldPricePerGram",
+      type: "number",
+      required: false,
+      label: "Nisab Gold Price Per Gram (USD)",
+      min: 1,
+    },
+    {
+      fieldName: "nisabSilverPricePerGram",
+      type: "number",
+      required: false,
+      label: "Nisab Silver Price Per Gram (USD)",
+      min: 1,
+    },
+    {
+      fieldName: "zakatRate",
+      type: "number",
+      required: false,
+      label: "Zakat Rate (%)",
+      min: 0,
+      max: 100,
+    },
+    {
+      fieldName: "haramCategories",
+      type: "array",
+      required: false,
+      label: "Haram Transaction Categories",
+      item: { type: "string", required: true },
+    },
+    {
+      fieldName: "companyWebsite",
+      type: "url",
+      required: false,
+      label: "Company Website URL",
+    },
+    {
+      fieldName: "supportEmail",
+      type: "string",
+      required: false,
+      label: "Support Email",
+    },
+    {
+      fieldName: "showAzharStablecoin",
+      type: "boolean",
+      required: false,
+      label: "Show THE AZHAR Stablecoin Panel",
+    },
+    {
+      fieldName: "defaultCurrency",
+      type: "enum",
+      required: false,
+      label: "Default Currency",
+      options: ["USD", "MYR", "SAR", "IDR", "GBP", "EUR"],
     },
   ],
 };
