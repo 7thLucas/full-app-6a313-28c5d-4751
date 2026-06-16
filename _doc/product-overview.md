@@ -20,10 +20,10 @@
 
 | Persona | Role | Primary Need |
 |---|---|---|
-| Central Bank / Sovereign Authority | National monetary policymakers and central bank operators | Immutable fiat ledger, AGI monetary policy, real-time counterfeit elimination |
-| Islamic Bank Operator | Compliance and operations leads at Islamic financial institutions | Shariah audit automation, atomic cross-border settlement, zero-Riba rails |
+| Islamic Bank Operator | Compliance and operations leads at Islamic financial institutions | Shariah audit automation, transaction compliance screening, zero-Riba rails |
 | Shariah Board / Compliance Officer | Fatwa scholars, Shariah supervisory board members, compliance staff | Live transaction screening, Shariah board dashboard, global fatwa database |
 | Wallet Holder / Individual | Retail and institutional holders of THE AZHAR stablecoin | Zakat auto-distribution, halal finance, SWIFT-free OIC cross-border transfers |
+| Central Bank / Sovereign Authority | National monetary policymakers and central bank operators | Immutable fiat ledger, AGI monetary policy, real-time counterfeit elimination (full-vision roadmap) |
 
 ---
 
