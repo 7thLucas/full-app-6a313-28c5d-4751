@@ -1,0 +1,65 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-landscape .sl-content { width: 52%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-landscape .sl-visual { width: 48%; }
+.mode-portrait .sl-visual { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-root flex h-full">
+
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <div>
+        <div class="flex items-center gap-3 mb-10">
+          <span class="block w-8 h-px bg-amber-500"></span>
+          <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">Financial System 7.0</span>
+        </div>
+        <h1 class="text-6xl font-black text-emerald-900 leading-none tracking-tight mb-1">AZHAR</h1>
+        <h1 class="text-6xl font-black text-emerald-900 leading-none tracking-tight mb-6">OVERLORD</h1>
+        <p class="text-sm text-emerald-800 leading-relaxed mb-6 max-w-xs">
+          The World's First Shariah-Compliant Sovereign Fiat Management System
+        </p>
+        <span class="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 text-amber-700 text-xs font-bold px-4 py-2 rounded-full">
+          &#10022; THE AZHAR &middot; God Of Gods Hybrid Stablecoin
+        </span>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-xs text-slate-400">Transparent</span>
+          <span class="text-slate-300">&middot;</span>
+          <span class="text-xs text-slate-400">Riba-Free</span>
+          <span class="text-slate-300">&middot;</span>
+          <span class="text-xs text-slate-400">Quantum-Secured</span>
+          <span class="text-slate-300">&middot;</span>
+          <span class="text-xs text-slate-400">OIC-Ready</span>
+        </div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual relative overflow-hidden bg-emerald-900 flex-shrink-0">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=majestic%20Islamic%20geometric%20arabesque%20gold%20ornamental%20pattern%20on%20deep%20emerald%20green%20background%20sovereign%20financial%20architecture%20premium%20editorial"
+        alt="AZHAR OVERLORD"
+        class="w-full h-full object-cover opacity-60"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-emerald-900 to-transparent"></div>
+
+      <!-- Stablecoin Badge -->
+      <div class="absolute bottom-10 right-8 bg-amber-500 rounded-2xl px-5 py-4 text-center">
+        <p class="text-white font-black text-3xl tracking-widest">AZHAR</p>
+        <p class="text-amber-100 text-xs font-bold tracking-widest uppercase mt-1">God Of Gods Stablecoin</p>
+      </div>
+
+      <!-- Top Tag -->
+      <div class="absolute top-8 right-8 bg-white bg-opacity-10 rounded-lg px-3 py-2 border border-white border-opacity-20">
+        <p class="text-white text-xs font-semibold">Shariah &middot; Quantum &middot; AGI</p>
+      </div>
+    </div>
+
+  </div>
+</section>
