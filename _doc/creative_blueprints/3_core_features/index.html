@@ -1,76 +1,115 @@
 <style>
-.mode-landscape .sl-grid { grid-template-columns: repeat(4, 1fr); }
-.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-landscape .sl-cols { flex-direction: row; }
+.mode-portrait .sl-cols { flex-direction: column; }
+.mode-landscape .sl-mvp { width: 55%; }
+.mode-portrait .sl-mvp { width: 100%; }
+.mode-landscape .sl-next { width: 45%; }
+.mode-portrait .sl-next { width: 100%; }
+.mode-landscape .sl-mvp-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-mvp-grid { grid-template-columns: repeat(2, 1fr); }
 </style>
 <section class="w-full h-full bg-white overflow-auto">
   <div class="h-full flex flex-col p-10">
 
-    
-    <div class="flex items-end justify-between mb-4">
+    <!-- Header -->
+    <div class="flex items-end justify-between mb-5">
       <div>
-        <p class="text-xs font-bold tracking-widest text-amber-600 uppercase mb-1">Core Technologies</p>
-        <h2 class="text-2xl font-black text-emerald-900">8 Sovereign-Grade Systems</h2>
+        <p class="text-xs font-bold tracking-widest text-amber-600 uppercase mb-1">Platform Capabilities</p>
+        <h2 class="text-2xl font-black text-emerald-900">MVP Built · Next Features Defined</h2>
       </div>
-      <p class="text-xs text-slate-400 text-right leading-snug max-w-xs">Purpose-built for central banks, Islamic institutions, Shariah boards, and OIC nations</p>
+      <div class="flex gap-2">
+        <span class="bg-emerald-900 text-white text-xs font-bold px-3 py-1.5 rounded-full">Islamic Bank</span>
+        <span class="border border-emerald-200 text-emerald-800 text-xs font-semibold px-3 py-1.5 rounded-full">Shariah Board</span>
+        <span class="border border-emerald-200 text-emerald-800 text-xs font-semibold px-3 py-1.5 rounded-full">Wallet Holder</span>
+      </div>
     </div>
 
-    
-    <div class="flex gap-2 mb-4">
-      <span class="bg-emerald-900 text-white text-xs font-bold px-4 py-1.5 rounded-full">Central Bank</span>
-      <span class="border border-emerald-200 text-emerald-800 text-xs font-semibold px-4 py-1.5 rounded-full">Islamic Bank</span>
-      <span class="border border-emerald-200 text-emerald-800 text-xs font-semibold px-4 py-1.5 rounded-full">Shariah Board</span>
-      <span class="border border-emerald-200 text-emerald-800 text-xs font-semibold px-4 py-1.5 rounded-full">Wallet Holder</span>
-    </div>
+    <!-- Two-column layout -->
+    <div class="sl-cols flex gap-4 flex-1 min-h-0">
 
-    
-    <div class="sl-grid grid gap-3 flex-1 min-h-0">
+      <!-- Left: MVP Built -->
+      <div class="sl-mvp flex flex-col">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <p class="text-xs font-bold text-emerald-700 uppercase tracking-widest">Live — MVP Complete</p>
+        </div>
+        <div class="sl-mvp-grid grid gap-3 flex-1 min-h-0">
 
-      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-emerald-600 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-emerald-900 mb-1">Sovereign Currency Ledger</p>
-        <p class="text-xs text-slate-600 leading-snug">Immutable fiat ledger with embedded Shariah tagging; asset-backed by design</p>
+          <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex flex-col">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-emerald-600 rounded-full"></span>
+              <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">Built</span>
+            </div>
+            <p class="text-xs font-bold text-emerald-900 mb-1">Transaction Compliance Screening</p>
+            <p class="text-xs text-slate-600 leading-snug">Real-time Shariah screening; auto-rejects Haram transactions against global fatwa rules</p>
+          </div>
+
+          <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex flex-col">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-emerald-600 rounded-full"></span>
+              <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">Built</span>
+            </div>
+            <p class="text-xs font-bold text-emerald-900 mb-1">Zakat Calculator</p>
+            <p class="text-xs text-slate-600 leading-snug">Automatic 2.5% Zakat calculation and distribution for qualifying wallets and THE AZHAR holders</p>
+          </div>
+
+          <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex flex-col">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-emerald-600 rounded-full"></span>
+              <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">Built</span>
+            </div>
+            <p class="text-xs font-bold text-emerald-900 mb-1">Halal Investment Screener</p>
+            <p class="text-xs text-slate-600 leading-snug">Screens investment instruments for Riba, Gharar, and Maysir exposure before execution</p>
+          </div>
+
+          <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 flex flex-col">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-emerald-600 rounded-full"></span>
+              <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">Built</span>
+            </div>
+            <p class="text-xs font-bold text-emerald-900 mb-1">Shariah Audit Dashboard</p>
+            <p class="text-xs text-slate-600 leading-snug">Real-time audit logs, compliance metrics, and screening history for Shariah boards and compliance officers</p>
+          </div>
+
+        </div>
       </div>
 
-      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-emerald-600 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-emerald-900 mb-1">AGI Monetary Brain</p>
-        <p class="text-xs text-slate-600 leading-snug">95%+ inflation prediction via Musharakah &amp; Mudarabah models — zero interest manipulation</p>
-      </div>
+      <!-- Right: Next Features -->
+      <div class="sl-next flex flex-col">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <p class="text-xs font-bold text-amber-700 uppercase tracking-widest">Next — Roadmap</p>
+        </div>
+        <div class="flex flex-col gap-3 flex-1 min-h-0">
 
-      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-emerald-600 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-emerald-900 mb-1">Shariah Audit Engine</p>
-        <p class="text-xs text-slate-600 leading-snug">Real-time fatwa-compliance checker; auto-rejects Haram transactions instantly</p>
-      </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-amber-500 rounded-full"></span>
+              <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold px-2 py-0.5 rounded-full">Up Next</span>
+            </div>
+            <p class="text-xs font-bold text-amber-900 mb-1">Automated Compliance Reports</p>
+            <p class="text-xs text-slate-600 leading-snug">Scheduled PDF Shariah compliance reports for board meetings — branch-level breakdown and trend analysis</p>
+          </div>
 
-      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-emerald-600 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-emerald-900 mb-1">Anti-Counterfeit Protocol</p>
-        <p class="text-xs text-slate-600 leading-snug">Authenticates physical &amp; digital cash in 0.001s; globally blacklists counterfeits instantly</p>
-      </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-amber-500 rounded-full"></span>
+              <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold px-2 py-0.5 rounded-full">Up Next</span>
+            </div>
+            <p class="text-xs font-bold text-amber-900 mb-1">Customer Halal Finance Portal</p>
+            <p class="text-xs text-slate-600 leading-snug">Self-service portal for customers to review their transaction compliance history and Zakat eligibility</p>
+          </div>
 
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-amber-500 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-amber-900 mb-1">Inter-Operable Banking Protocol</p>
-        <p class="text-xs text-slate-600 leading-snug">Atomic OIC settlement via Tawarruq rails — no SWIFT, no Riba, &lt;1 second</p>
-      </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-2">
+              <span class="block w-5 h-1 bg-amber-500 rounded-full"></span>
+              <span class="bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold px-2 py-0.5 rounded-full">Up Next</span>
+            </div>
+            <p class="text-xs font-bold text-amber-900 mb-1">Waqf Asset Registry</p>
+            <p class="text-xs text-slate-600 leading-snug">Register and track Islamic endowment assets — Shariah compliance monitoring and distribution records</p>
+          </div>
 
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-amber-500 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-amber-900 mb-1">Zakat Engine + Self-Healing</p>
-        <p class="text-xs text-slate-600 leading-snug">AGI 24/7 security scans; auto-patches vulnerabilities; auto-distributes 2.5% Zakat to qualifying wallets</p>
-      </div>
-
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-amber-500 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-amber-900 mb-1">Quantum-Resistant Encryption</p>
-        <p class="text-xs text-slate-600 leading-snug">Immune to quantum computing attacks; protects sovereign &amp; Waqf data for 50+ years</p>
-      </div>
-
-      <div class="bg-emerald-900 rounded-xl p-4 flex flex-col">
-        <span class="block w-6 h-1 bg-amber-400 rounded-full mb-3"></span>
-        <p class="text-xs font-bold text-amber-400 mb-1">THE AZHAR Protocol</p>
-        <p class="text-xs text-emerald-200 leading-snug">The most super advanced Hybrid Stablecoin — Shariah smart contracts, cross-jurisdiction liquidity</p>
+        </div>
       </div>
 
     </div>
