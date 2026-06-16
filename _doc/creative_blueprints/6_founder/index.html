@@ -1,0 +1,57 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-landscape .sl-content { width: 48%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-landscape .sl-visual { width: 52%; }
+.mode-portrait .sl-visual { width: 100%; height: 45%; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-root flex h-full">
+
+    <!-- Left: Founder Details -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <div>
+        <div class="flex items-center gap-3 mb-10">
+          <span class="block w-8 h-px bg-amber-500"></span>
+          <span class="text-xs font-bold tracking-widest text-amber-600 uppercase">Founder &amp; CEO</span>
+        </div>
+        <h1 class="text-5xl font-black text-emerald-900 leading-none tracking-tight mb-2">KOSASIH</h1>
+        <p class="text-sm font-semibold text-emerald-700 mb-1">Founder &amp; CEO &middot; AZHAR OVERLORD</p>
+        <p class="text-xs text-slate-500 mb-8">🇮🇩 Indonesia</p>
+        <p class="text-sm text-slate-700 leading-relaxed mb-8 max-w-xs">
+          Building AZHAR as the world's first Shariah-compliant sovereign financial management platform — Financial System 7.0 for OIC nations and Islamic institutions worldwide.
+        </p>
+        <div class="flex flex-col gap-2">
+          <span class="inline-flex items-center gap-2 bg-blue-700 text-white text-xs font-bold px-4 py-2 rounded-full w-fit">
+            LinkedIn &middot; /in/kosasih-81b46b5a
+          </span>
+          <span class="inline-flex items-center gap-2 bg-black text-white text-xs font-bold px-4 py-2 rounded-full w-fit">
+            𝕏 &middot; @Kosasihg88G
+          </span>
+          <span class="inline-flex items-center gap-2 bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-full w-fit">
+            GitHub &middot; KOSASIH
+          </span>
+        </div>
+      </div>
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="sl-visual relative overflow-hidden bg-emerald-900 flex-shrink-0">
+      <img
+        src="https://client-api.quantumbyte.ai/uploads/eqn1zqlg/4751/assets/a7c49b53-97d6-49d2-afe5-7366df151de2_1781613999750_typywf.jpg"
+        alt="KOSASIH — Founder &amp; CEO of AZHAR"
+        class="w-full h-full object-cover object-top"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-emerald-900 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute bottom-8 right-8 bg-amber-500 rounded-xl px-4 py-3 text-center">
+        <p class="text-white font-black text-base tracking-wide">AZHAR OVERLORD</p>
+        <p class="text-amber-100 text-xs font-bold tracking-widest uppercase mt-0.5">Financial System 7.0</p>
+      </div>
+    </div>
+
+  </div>
+</section>
