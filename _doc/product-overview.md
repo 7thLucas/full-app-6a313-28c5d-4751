@@ -113,6 +113,7 @@ The initial MVP layer of AZHAR OVERLORD is live and includes:
 | Zakat Calculator | Built | Automatic 2.5% Zakat calculation for qualifying wallets and THE AZHAR stablecoin holders |
 | Halal Investment Screener | Built | Screens investment instruments for Shariah compliance — rejects Riba, Gharar, and Maysir exposure |
 | Shariah Audit Dashboard | Built | Compliance officers and Shariah board members can view real-time audit status, screening logs, and compliance metrics |
+| Founder & CEO Profile Page | Built | Dedicated profile page for KOSASIH (Founder & CEO, Indonesia) with photo, bio, and social links — accessible from the dashboard sidebar |
 
 ---
 
