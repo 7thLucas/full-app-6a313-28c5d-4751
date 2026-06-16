@@ -13,6 +13,7 @@ import {
   ChevronRight,
   Bell,
   User,
+  UserCircle,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -41,6 +42,11 @@ const NAV_ITEMS = [
     label: "Shariah Audit",
     href: "/dashboard/audit",
     icon: ClipboardList,
+  },
+  {
+    label: "Founder & CEO",
+    href: "/dashboard/founder",
+    icon: UserCircle,
   },
 ];
 
