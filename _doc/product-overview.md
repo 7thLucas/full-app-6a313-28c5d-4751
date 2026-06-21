@@ -33,7 +33,7 @@ First-mover in sovereign Shariah-compliant monetary infrastructure. Not a fintec
 ---
 
 ## Brand & Tone
-Supreme confidence. Islamic gravitas. Institutional authority. Declarative, not tentative. "God of Gods" framing — every claim anchored in Islamic principles and sovereign-scale legitimacy. Brand colors: deep emerald + gold.
+Supreme confidence. Islamic gravitas. Institutional authority. Declarative, not tentative. "THE MOST SUPER ADVANCED HYBRID" framing — every claim anchored in Islamic principles and sovereign-scale legitimacy. Brand colors: deep emerald + gold.
 
 ---
 
