@@ -330,7 +330,7 @@ export default function DashboardOverview() {
                     THE AZHAR Reserve Transparency Panel
                   </h2>
                   <p className="text-xs mt-0.5" style={{ color: "#5A6B7B" }}>
-                    God of Gods Hybrid Stablecoin · Asset-backed 1:1 · Shariah-Certified
+                    THE MOST SUPER ADVANCED HYBRID Stablecoin · Asset-backed 1:1 · Shariah-Certified
                   </p>
                 </div>
                 <div className="text-right">
